@@ -15,6 +15,7 @@ train_file_sparse = '/home/cl67/workspace/se/Amazon-Product-Search-Datasets/revi
 
 
 
+
 # Extract word in a sentence to form a list without stop words
 def word_extraction(sentence):
     # set(stopwords.words('english'))
