@@ -24,6 +24,17 @@ def word_extraction(sentence):
     cleaned_text = [w.lower() for w in words if w not in ignore]
     return cleaned_text
 
+def trigram_extraction(sentence, spaces):
+    # no need for an ignore list
+    # ignore = ['a','the','is']
+    if spaces:
+        words = sentence
+    else:
+        words = re.sub(" ", "", sentence)
+    words = [words[i:i+3] for i in range(0, len(words)-2)]
+    cleaned_text = [w.lower() for w in words]
+    return(cleaned_text)
+
 def tokenize(sentences):
     words = []
     for sentence in sentences:
