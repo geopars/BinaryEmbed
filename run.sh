@@ -1,0 +1,1 @@
+python main.py --batch-size 640 --lr 0.0001 --train-file /home/cl67/workspace/se/Amazon-Product-Search-Datasets/reviews_CDs_and_Vinyl_5.json.gz/query_asin_train_sparse.data --test-file /home/cl67/workspace/se/Amazon-Product-Search-Datasets/reviews_CDs_and_Vinyl_5.json.gz/query_asin_test_sparse.data
